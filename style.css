@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+ --White: hsl(0, 0%, 100%);
+ --Black: hsl(0, 0%, 0%);
+ --Dark-Gray: hsl(0, 0%, 55%);
+ --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.357),rgba(0, 0, 0, 0.489)) ,url('./assets/desktop/image-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-side-bar {
+  display: none;
+  padding: 2rem;
+}
+.open-menu{
+  display: none;
+}
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  padding-top: 5rem;
+}
+.links-container ul , .footer-links-container ul{
+  display: flex;
+  align-items: center;
+  gap: 2rem ;
+  text-transform: capitalize;
+  color: white;
+  font-family:'Alata' , sans-serif; 
+}
+.links-container ul li , .social-media-icons ul li , .footer-links-container ul li{
+  cursor: pointer;
+  padding-bottom: 5px;
+  position: relative;
+}
+.links-container ul li::after , .social-media-icons ul li::after , .footer-links-container ul li::after{
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+.links-container ul li:hover::after , .social-media-icons ul li:hover::after , .footer-links-container ul li:hover::after{
+  width: 100%;
+}
+.main-container {
+  color: white;
+  border: 3px solid white;
+  max-width: 650px;
+  padding: 2rem;
+  margin-top: 7rem;
+  margin-left: 6rem;
+  box-sizing: border-box;
+  font-family:'Josefin Sans' , sans-serif; 
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 80px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  user-select: none;
+}
+.second-hero-container {
+  display: flex;
+  align-items: center;
+  padding:  6rem 6rem 0rem 6rem;
+  position: relative;
+}
+.text-interactive-container{
+  background-color: white;
+  padding: 4rem;
+  font-family:'Josefin Sans' , sans-serif; 
+  position: absolute;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  bottom: -20px;
+  right: 200px;
+}
+.header h2 {
+  font-family:'Alata' , sans-serif; 
+  font-size: 45px;
+  line-height: 60px;  
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.text-interactive-container p {
+  line-height: 20px;
+  font-weight: bold;
+  color: var(--Dark-Gray);
+}
+.therd-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  padding-bottom: 8rem;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:'Alata' , sans-serif;
+  margin-bottom: 2rem;
+}
+.header-container h2 {
+  font-size: 45px;
+  line-height: 60px;  
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.btn {
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  font-family:'Alata' , sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.mobile-btn {
+  display: none;
+}
+.photo-collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+.box1 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-deep-earth.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box2 {
+  background:linear-gradient(hsla(0, 0%, 0%, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-night-arcade.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box3 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-soccer-team.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box4 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-grid.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box5 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-from-above.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box6 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-pocket-borealis.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box7 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-curiosity.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box8 {
+  background:linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.489)), url('./assets/desktop/image-fisheye.jpg');
+  width: 256px;
+  height: 450px ;
+}
+.box {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.box h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  font-family:'Alata' , sans-serif; 
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  background-color: black;
+  color:white;
+}
+.footer-left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-right-container {
+  display: flex;
+  gap: 2rem;
+}
+.social-media-icons ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+.social-media-icons ul li a{
+  color: white;
+}
+/* resposive section */
+@media only screen and (width <= 1200px) {
+  .second-hero-container {
+    display: flex;
+    flex-direction: column;
+    position: none;
+    padding: 6rem;
+    padding-top: 5rem;
+  }
+  .second-hero-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .text-interactive-container {
+    position: relative;
+    transform: translateX(0);
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  .header h2 {
+    text-align: center;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  } 
+  .text-interactive-container p {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    font-size: 20px;
+  }
+}

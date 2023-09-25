@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://adibchiguer.github.io/loopstudios-landing-page/)
+- Live Site URL: [click here](https://adibchiguer.github.io/loopstudios-landing-page/)
 
 ### Built with
 
